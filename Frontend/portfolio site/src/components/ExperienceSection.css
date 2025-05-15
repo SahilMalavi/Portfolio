@@ -1,0 +1,243 @@
+.experience-section {
+  padding: 2rem;
+  color: #f0f0f0;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.highlight {
+  color: #61dafb;
+  position: relative;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -6px;
+  left: 0;
+  background-color: #61dafb;
+  transform: scaleX(0.3);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.section-title:hover .highlight::after {
+  transform: scaleX(1);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #333;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 60px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  border: 3px solid #61dafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #61dafb;
+  z-index: 1;
+}
+
+.timeline-content {
+  background-color: #1a1a1a;
+  border-left: 3px solid #61dafb;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content h3 {
+  color: #61dafb;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.timeline-content h4 {
+  color: #f0f0f0;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.timeline-date {
+  color: #aaa;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.timeline-description {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.timeline-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background-color: #222;
+  color: #61dafb;
+  border: 1px solid #61dafb;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #61dafb;
+  color: #111;
+}
+
+.section-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.see-more {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: transparent;
+  color: #61dafb;
+  border: 2px solid #61dafb;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.see-more:hover {
+  background-color: #61dafb;
+  color: #111;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(97, 218, 251, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .timeline::before {
+    left: 15px;
+  }
+  
+  .timeline-item {
+    padding-left: 50px;
+  }
+  
+  .timeline-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .timeline-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .timeline-skills {
+    gap: 6px;
+  }
+  
+  .skill-tag {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .timeline::before {
+    left: 50%;
+  }
+  
+  .timeline-item {
+    padding-left: 0;
+    width: 50%;
+    margin-left: 0;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    margin-left: 0;
+    padding-right: 40px;
+    text-align: right;
+  }
+  
+  .timeline-item:nth-child(even) {
+    margin-left: 50%;
+    padding-left: 40px;
+  }
+  
+  .timeline-icon {
+    left: calc(50% - 20px);
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    border-left: none;
+    border-right: 3px solid #61dafb;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-skills {
+    justify-content: flex-end;
+  }
+}
