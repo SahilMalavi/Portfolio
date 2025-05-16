@@ -380,3 +380,22 @@
     width: 48%;
   }
 }
+
+.leetcode-card-container {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.leetcode-card-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffa116;
+  transition: transform 0.3s ease-in-out;
+}
+
+.leetcode-card-img:hover {
+  transform: scale(1.02);
+}

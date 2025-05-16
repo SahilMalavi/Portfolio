@@ -19,7 +19,7 @@ const AboutSection = ({ preview = false }) => {
                     <>
                         <p>
                             I'm a passionate Full-Stack Developer skilled in MERN Stack and AI/ML technologies.
-                            With experience building 5+ impactful projects including NLP-driven applications
+                            With experience building 10+ impactful projects including NLP-driven applications
                             and AI chatbots, I combine technical expertise with creative problem-solving.
                         </p>
                         <p>
