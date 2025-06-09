@@ -18,9 +18,9 @@ const ProjectsSection = ({ preview = false }) => {
             category: 'fullstack',
             technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'React Leaflet', 'JWT'],
             githubLink: 'https://github.com/Avi0395/MechHelp/',
-            liveLink: '',
+            liveLink: 'https://mechhelp.vercel.app/',
             year: '2025',
-            featured: true, // Marking as featured
+            featured: true, 
         },
         {
             id: 2,

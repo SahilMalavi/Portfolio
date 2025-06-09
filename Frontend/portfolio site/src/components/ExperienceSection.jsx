@@ -48,6 +48,15 @@ const ExperienceSection = ({ preview = false }) => {
             skills: ['Computer Science and Engineering']
         },
         {
+            id: 7, // New ID for Honors degree
+            role: 'Honors Degree in Data Science',
+            company: 'DKTE Society\'s Textile and Engineering Institute, Ichalkaranji',
+            duration: '2023 - Present', // Assuming it runs concurrently with B.Tech
+            description: 'Pursuing an Honors degree in Data Science with a CGPA of 8.7.',
+            type: 'education',
+            skills: ['Data Science', 'Machine Learning', 'Statistical Analysis'] // Added relevant skills
+        },
+        {
             id: 5,
             role: 'Diploma in Computer Engineering',
             company: 'Institute of Civil and Rural Engineering, Gargoti',
@@ -66,7 +75,6 @@ const ExperienceSection = ({ preview = false }) => {
             skills: []
         }
     ];
-
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
