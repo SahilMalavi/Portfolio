@@ -23,8 +23,8 @@ const AboutSection = ({ preview = false }) => {
                             and AI chatbots, I combine technical expertise with creative problem-solving.
                         </p>
                         <p>
-                            Currently pursuing my B.Tech in Computer Science and Engineering at DKTE Society's
-                            Textile and Engineering Institute with a CGPA of 8.36. along with Honors degree in Data Science with a CGPA of 8.7. My journey in tech has equipped me with
+                            Currently pursuing my<b> B.Tech in Computer Science and Engineering at DKTE Society's
+                            Textile and Engineering Institute with a CGPA of 8.36</b>. along with <b>Honors degree in Data Science with a CGPA of 8.7</b>. My journey in tech has equipped me with
                             a diverse skill set spanning from frontend frameworks to backend systems, along with strong
                             foundations in AI and machine learning.
                         </p>
@@ -54,10 +54,10 @@ const AboutSection = ({ preview = false }) => {
                         </div>
 
                         <a
-                            href="/resume/Sahil_Malavi_Resume.pdf"
-                            download="Sahil_Malavi_Resume.pdf"
+                            href="https://drive.google.com/file/d/1mq0bJcBeGyr3L-58s16B8p4J9KBPrxrC/view?usp=sharing"
+                            // download="Sahil_Malavi_Resume.pdf"
                             className="btn">
-                            Download CV <ArrowRight size={16} />
+                            View Resume <ArrowRight size={16} />
                         </a>
                     </>
 
