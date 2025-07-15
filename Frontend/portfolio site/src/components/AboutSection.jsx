@@ -24,7 +24,7 @@ const AboutSection = ({ preview = false }) => {
                         </p>
                         <p>
                             Currently pursuing my<b> B.Tech in Computer Science and Engineering at DKTE Society's
-                            Textile and Engineering Institute with a CGPA of 8.36</b>. along with <b>Honors degree in Data Science with a CGPA of 8.7</b>. My journey in tech has equipped me with
+                            Textile and Engineering Institute with a CGPA of 8.41</b>. along with <b>Honors degree in Data Science with a CGPA of 8.6</b>. My journey in tech has equipped me with
                             a diverse skill set spanning from frontend frameworks to backend systems, along with strong
                             foundations in AI and machine learning.
                         </p>
