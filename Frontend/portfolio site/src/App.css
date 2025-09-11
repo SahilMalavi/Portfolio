@@ -168,6 +168,7 @@ body {
   .main-content {
     margin-left: 0;
     padding: 1rem;
+    padding-top: 60px; /*  Add this: header (60px) + extra gap */
   }
   
   .grid-2, .grid-3 {

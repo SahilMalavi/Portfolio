@@ -41,7 +41,7 @@ const Sidebar = ({ activeSection, setActiveSection, isMobile }) => {
                 <header className="mobile-header">
                     <div className={`mobile-logo ${isSidebarOpen ? 'hidden' : ''}`}>
                         <img src={sahil_photo} alt="Sahil Malavi" />
-                        <span className="mobile-name">Sahil Malavi</span>
+                        {/* <span className="mobile-name">Sahil Malavi</span> */}
                     </div>
                     <button
                         className={`mobile-toggle ${isSidebarOpen ? 'active' : ''}`}
