@@ -4,7 +4,7 @@ import {
     Github, Linkedin, Twitter, ExternalLink
 } from 'lucide-react';
 import './Sidebar.css';
-import sahil_photo from "../assets/sahil_photo.jpg"; 
+import sahil_photo from "../assets/sahil_photo.jpg";
 
 const Sidebar = ({ activeSection, setActiveSection, isMobile }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -38,12 +38,18 @@ const Sidebar = ({ activeSection, setActiveSection, isMobile }) => {
     return (
         <>
             {isMobile && (
-                <button
-                    className={`mobile-toggle ${isSidebarOpen ? 'active' : ''}`}
-                    onClick={toggleSidebar}
-                >
-                    {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+                <header className="mobile-header">
+                    <div className={`mobile-logo ${isSidebarOpen ? 'hidden' : ''}`}>
+                        <img src={sahil_photo} alt="Sahil Malavi" />
+                        <span className="mobile-name">Sahil Malavi</span>
+                    </div>
+                    <button
+                        className={`mobile-toggle ${isSidebarOpen ? 'active' : ''}`}
+                        onClick={toggleSidebar}
+                    >
+                        {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                </header>
             )}
 
             <aside className={`sidebar ${isMobile ? 'mobile' : ''} ${isSidebarOpen ? 'open' : ''}`}>
