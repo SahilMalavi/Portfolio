@@ -11,8 +11,12 @@ const ContactSection = ({ preview = false }) => {
         subject: '',
         message: ''
     });
-    const [submitted, setSubmitted] = useState(false);
+    const [result, setResult] = useState('');
     const [loading, setLoading] = useState(false);
+
+    // Web3Forms access key - Replace with your own key
+    const WEB3FORMS_ACCESS_KEY = 'c46750b2-2bac-4f68-adfc-586b033c63e8';
+
 
     // Framer Motion Variants
     const containerVariants = {
@@ -51,26 +55,55 @@ const ContactSection = ({ preview = false }) => {
             ...prevState,
             [name]: value
         }));
+        // Clear result when user starts typing
+        if (result) setResult('');
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = async (event) => {
+        event.preventDefault();
         setLoading(true);
+        setResult("Sending....");
 
-        // Simulate form submission
-        setTimeout(() => {
-            console.log('Form submitted:', formData);
-            setLoading(false);
-            setSubmitted(true);
-            setFormData({
-                name: '',
-                email: '',
-                subject: '',
-                message: ''
+        const formDataToSend = new FormData(event.target);
+
+        // Add Web3Forms access key
+        formDataToSend.append("access_key", WEB3FORMS_ACCESS_KEY);
+
+        // Add your email to receive the form submissions
+        formDataToSend.append("to", "sahilmalavi96@gmail.com");
+
+        // Add subject line
+        formDataToSend.append("subject", `📧🚀 PORTFOLIO CONTACT REQUEST | ${formData.subject} | ${formData.name}`);
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formDataToSend
             });
 
-            setTimeout(() => setSubmitted(false), 5000);
-        }, 1500);
+            const data = await response.json();
+
+            if (data.success) {
+                setResult("Message sent successfully!");
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                });
+                event.target.reset();
+
+                // Clear success message after 5 seconds
+                setTimeout(() => setResult(''), 5000);
+            } else {
+                console.log("Error", data);
+                setResult("Failed to send message. Please try again.");
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            setResult("Network error. Please try again.");
+        } finally {
+            setLoading(false);
+        }
     };
 
     const contactInfo = [
@@ -229,17 +262,23 @@ const ContactSection = ({ preview = false }) => {
 
                                 <button
                                     type="submit"
-                                    className={`submit-button ${loading ? 'loading' : ''} ${submitted ? 'submitted' : ''}`}
-                                    disabled={loading || submitted}
+                                    className={`submit-button ${loading ? 'loading' : ''} ${result.includes('successfully') ? 'submitted' : ''}`}
+                                    disabled={loading}
                                 >
                                     {loading ? (
                                         <span className="loading-text">Sending...</span>
-                                    ) : submitted ? (
-                                        <span className="success-text">Message Sent!</span>
                                     ) : (
                                         <span>Send Message</span>
                                     )}
                                 </button>
+
+                                {result && (
+                                    <p className={`result-message ${result.includes('successfully') ? 'success' :
+                                        result.includes('Sending') ? 'sending' : 'error'
+                                        }`}>
+                                        {result}
+                                    </p>
+                                )}
                             </form>
                         </motion.div>
                     )}
