@@ -1,5 +1,5 @@
 import { FaGithub, FaCode } from 'react-icons/fa';
-import { SiLeetcode, SiGeeksforgeeks } from 'react-icons/si';
+import { SiLeetcode, SiGeeksforgeeks,SiCodechef } from 'react-icons/si';
 import './CodingProfilesSection.css';
 
 const CodingProfilesSection = ({ preview = false }) => {
@@ -26,6 +26,13 @@ const CodingProfilesSection = ({ preview = false }) => {
             url: 'https://www.geeksforgeeks.org/user/sahilmalavi96/',
             icon: <SiGeeksforgeeks />,
             color: '#2F8D46'
+        },
+        {
+            platform: 'CodeChef',
+            username: 'sahilmalavi96',
+            url: 'https://www.codechef.com/users/sahilmalavi96',
+            icon: <SiCodechef />,
+            color: '#5B4638'
         }
     ];
 

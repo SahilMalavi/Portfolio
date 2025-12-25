@@ -14,7 +14,7 @@ const AboutSection = ({ preview = false }) => {
 
                 <div className="about-text">
                     <h3>Hi, I'm <span className="highlight">Sahil Malavi</span></h3>
-                    <h4>Full Stack Developer & Machine Learning Enthusiast</h4>
+                    <h4>Full Stack Developer & AI Enthusiast</h4>
 
                     <>
                         <p>
@@ -24,7 +24,7 @@ const AboutSection = ({ preview = false }) => {
                         </p>
                         <p>
                             Currently pursuing my<b> B.Tech in Computer Science and Engineering at DKTE Society's
-                            Textile and Engineering Institute with a CGPA of 8.41</b>. along with <b>Honors degree in Data Science with a CGPA of 8.6</b>. My journey in tech has equipped me with
+                            Textile and Engineering Institute with a CGPA of 8.49</b>. along with <b>Honors degree in Data Science with a CGPA of 8.65</b>. My journey in tech has equipped me with
                             a diverse skill set spanning from frontend frameworks to backend systems, along with strong
                             foundations in AI and machine learning.
                         </p>
@@ -37,7 +37,7 @@ const AboutSection = ({ preview = false }) => {
                         <div className="personal-details">
                             <div className="detail-item">
                                 <span className="detail-label">Name:</span>
-                                <span className="detail-value">Sahil Vishnu Malavi</span>
+                                <span className="detail-value">Sahil Malavi</span>
                             </div>
                             <div className="detail-item">
                                 <span className="detail-label">Email:</span>
