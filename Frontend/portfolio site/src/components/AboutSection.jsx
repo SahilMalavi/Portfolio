@@ -14,11 +14,11 @@ const AboutSection = ({ preview = false }) => {
 
                 <div className="about-text">
                     <h3>Hi, I'm <span className="highlight">Sahil Malavi</span></h3>
-                    <h4>Full Stack Developer & AI Enthusiast</h4>
+                    <h4>Backend Developer & AI Enthusiast</h4>
 
                     <>
                         <p>
-                            I'm a passionate Full-Stack Developer skilled in MERN Stack and AI/ML technologies.
+                            I'm a passionate Backend Developer skilled in MERN Stack and AI/ML technologies.
                             With experience building 10+ impactful projects including NLP-driven applications
                             and AI chatbots, I combine technical expertise with creative problem-solving.
                         </p>
