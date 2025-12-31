@@ -4,7 +4,7 @@ import {
     Github, Linkedin, Twitter, ExternalLink
 } from 'lucide-react';
 import './Sidebar.css';
-import sahil_photo from "../assets/sahil_photo.jpg";
+import sahil_photo from "../assets/sahil_pic.png";
 
 const Sidebar = ({ activeSection, setActiveSection, isMobile }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
