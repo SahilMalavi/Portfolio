@@ -67,7 +67,7 @@ const SkillsSection = () => {
                 {renderCategory('Programming Languages', programmingLanguages, 'cat-blue')}
                 {renderCategory('Web Development', webDevelopment, 'cat-cyan')}
                 {renderCategory('Database & Cloud', databaseCloud, 'cat-purple')}
-                {renderCategory('AI & Machine Learning', aiMl, 'cat-orange')}
+                {renderCategory('Data & Machine Learning', aiMl, 'cat-orange')}
                 {renderCategory('Tools & Platforms', toolsPlatforms, 'cat-green')}
             </div>
         </section>
