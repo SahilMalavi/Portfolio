@@ -7,6 +7,7 @@ const SkillsSection = () => {
         { name: 'Java', icon: '☕' },
         { name: 'Python', icon: '🐍' },
         { name: 'JavaScript', icon: '⚡' },
+        { name: 'TypeScript', icon: '🔷' },
         { name: 'C++', icon: '🚀' },
         { name: 'SQL', icon: '🗄️' }
     ];
