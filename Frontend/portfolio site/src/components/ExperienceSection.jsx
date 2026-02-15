@@ -12,6 +12,16 @@ const ExperienceSection = ({ preview = false }) => {
 
     const experiences = [
         {
+            id: 0,
+            role: 'SDE Intern (MERN Stack Developer)',
+            company: 'Vulnuris Security Solutions LLP (Remote)',
+            duration: 'Dec 2025 - Present',
+            description: 'Developing a full-stack Digital Signature Web Application using React, Node.js and FastAPI with multi-recipient signing workflows and RBAC. Designed secure REST APIs with JWT authentication, signing order enforcement and expiration rules. Implemented PDF upload, drag-and-drop signature placement and verification workflows focusing on performance and usability.',
+            type: 'work',
+            skills: ['React.js', 'Node.js', 'FastAPI', 'JWT', 'RBAC', 'REST APIs', 'Performance Optimization']
+        },
+
+        {
             id: 1,
             role: 'Open-Source Contributor',
             company: 'GirlScript Summer of Code (GSSoC)\'24',
@@ -43,7 +53,7 @@ const ExperienceSection = ({ preview = false }) => {
             role: 'B.Tech in Computer Science and Engineering',
             company: 'DKTE Society\'s Textile and Engineering Institute, Ichalkaranji',
             duration: '2023 - Present',
-            description: 'Currently pursuing B.Tech with a CGPA of 8.36.',
+            description: 'Currently pursuing B.Tech with a CGPA of 8.49',
             type: 'education',
             skills: ['Computer Science and Engineering']
         },
@@ -52,7 +62,7 @@ const ExperienceSection = ({ preview = false }) => {
             role: 'Honors Degree in Data Science',
             company: 'DKTE Society\'s Textile and Engineering Institute, Ichalkaranji',
             duration: '2023 - Present', // Assuming it runs concurrently with B.Tech
-            description: 'Pursuing an Honors degree in Data Science with a CGPA of 8.7.',
+            description: 'Pursuing an Honors degree in Data Science with a CGPA of 8.6',
             type: 'education',
             skills: ['Data Science', 'Machine Learning', 'Statistical Analysis'] // Added relevant skills
         },
