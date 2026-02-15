@@ -58,7 +58,7 @@ const Sidebar = ({ activeSection, setActiveSection, isMobile }) => {
                         <img src={sahil_photo} alt="Profile" />
                     </div>
                     <h2 className="name">Sahil Malavi</h2>
-                    <p className="title">Backend Developer</p>
+                    <p className="title">Software Engineer</p>
                 </div>
 
                 <nav className="nav-menu">

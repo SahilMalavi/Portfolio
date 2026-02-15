@@ -14,24 +14,19 @@ const AboutSection = ({ preview = false }) => {
 
                 <div className="about-text">
                     <h3>Hi, I'm <span className="highlight">Sahil Malavi</span></h3>
-                    <h4>Backend Developer & AI Enthusiast</h4>
+                    <h4>Software Engineer — Backend Focused</h4>
 
                     <>
                         <p>
-                            I'm a passionate Backend Developer skilled in MERN Stack and AI/ML technologies.
-                            With experience building 10+ impactful projects including NLP-driven applications
-                            and AI chatbots, I combine technical expertise with creative problem-solving.
+                            I build backend services and production-ready web applications with a focus on reliability, performance and clean architecture. My work mainly involves designing REST APIs, handling authentication workflows and structuring databases for real-world usage rather than demos.
                         </p>
+
                         <p>
-                            Currently pursuing my<b> B.Tech in Computer Science and Engineering at DKTE Society's
-                            Textile and Engineering Institute with a CGPA of 8.49</b>. along with <b>Honors degree in Data Science with a CGPA of 8.65</b>. My journey in tech has equipped me with
-                            a diverse skill set spanning from frontend frameworks to backend systems, along with strong
-                            foundations in AI and machine learning.
+                            Currently pursuing my <b>B.Tech in Computer Science at DKTE Society's Textile and Engineering Institute (CGPA 8.49)</b> along with an <b>Honors degree in Data Science (CGPA 8.65)</b>. Through internships and projects, I’ve worked on secure signing workflows, AI-powered features, and real-time service platforms where system behavior and correctness matter.
                         </p>
+
                         <p>
-                            Beyond coding, I enjoy participating in hackathons (1st place in Internal Smart India Hackathon),
-                            contributing to open-source projects like GirlScript Summer of Code, and solving competitive
-                            programming challenges on platforms like LeetCode and GeeksforGeeks.
+                            I’m particularly interested in understanding how software behaves in production — debugging issues, improving response time, and making systems more reliable. Long term, I aim to grow into a backend engineer working on scalable product systems and performance-oriented architectures.
                         </p>
 
                         <div className="personal-details">
@@ -49,18 +44,16 @@ const AboutSection = ({ preview = false }) => {
                             </div>
                             <div className="detail-item">
                                 <span className="detail-label">Education:</span>
-                                <span className="detail-value">B.Tech in Computer Science (Pursuing)</span>
+                                <span className="detail-value">B.Tech Computer Science + Honors in Data Science</span>
                             </div>
                         </div>
 
                         <a
                             href="https://drive.google.com/file/d/1mq0bJcBeGyr3L-58s16B8p4J9KBPrxrC/view?usp=sharing"
-                            // download="Sahil_Malavi_Resume.pdf"
                             className="btn">
                             View Resume <ArrowRight size={16} />
                         </a>
                     </>
-
                 </div>
             </div>
         </section>
